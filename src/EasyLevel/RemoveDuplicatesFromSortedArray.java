@@ -17,7 +17,7 @@ public class RemoveDuplicatesFromSortedArray {
         return j;
     }
     public static void main(String[] args) {
-        int[] nums = new int[] { 1, 2, 2, 3, 3, 4, 5, 5, 6 };
+        int[] nums = new int[]{1, 2, 2, 3, 3, 4, 5, 5, 6};
         int newLength = removeDuplicates(nums);
         System.out.println("Length of array without duplicates = " + newLength);
         System.out.print("Array = ");
