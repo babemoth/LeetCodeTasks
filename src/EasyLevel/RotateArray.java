@@ -4,13 +4,21 @@ import java.util.Arrays;
 
 public class RotateArray {
     public static int[] rotate(int[] nums, int k) {
-        for (int i = 0; i < k; i++) {
-            int j = nums.length - 1;
-            int n = nums[j];
-            for (; j > 0; j--) {
-                nums[j] = nums[j-1];
-            }
-            nums[0] = n;
+        if (k==0){
+            return nums;
+        }
+        if (nums == null || nums.length == 0){
+            return nums;
+        }
+
+        int[] res = new int[nums.length];
+        for (int i=0; i<nums.length; i++) {
+            int newIndex = (i + k) % nums.length;
+            res[newIndex] = nums[i];
+        }
+
+        for (int i=0; i<nums.length; i++) {
+            nums[i] = res[i];
         }
         return nums;
     }
