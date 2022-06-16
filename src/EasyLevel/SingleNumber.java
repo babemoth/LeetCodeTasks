@@ -2,7 +2,7 @@ package EasyLevel;
 
 public class SingleNumber {
     public static void main(String[] args) {
-        int[] nums = new int[]{2,2,1};
+        int[] nums = new int[]{1,2,2,1,5,6,7,6,7};
         int result = singleNumber(nums);
         System.out.println(result);
 
