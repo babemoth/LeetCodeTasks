@@ -21,7 +21,8 @@ public class IntersectionOfTwoArraysII {
         Arrays.sort(nums1);
         Arrays.sort(nums2);
         for (int i = 0, j = 0; i < a && j < b;)
-            if (nums1[i] < nums2[j]) i++;
+            if (nums1[i] < nums2[j])
+                i++;
             else if (nums1[i] == nums2[j++]){
                 result[k++] = nums1[i++];
             }
