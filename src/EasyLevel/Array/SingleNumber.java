@@ -1,4 +1,4 @@
-package EasyLevel;
+package EasyLevel.Array;
 
 public class SingleNumber {
     public static void main(String[] args) {

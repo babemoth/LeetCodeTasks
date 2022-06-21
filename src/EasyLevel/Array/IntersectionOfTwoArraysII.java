@@ -1,4 +1,4 @@
-package EasyLevel;
+package EasyLevel.Array;
 
 import java.util.ArrayList;
 import java.util.Arrays;

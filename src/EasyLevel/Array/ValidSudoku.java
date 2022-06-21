@@ -1,4 +1,4 @@
-package EasyLevel;
+package EasyLevel.Array;
 
 import java.util.HashSet;
 import java.util.Set;
