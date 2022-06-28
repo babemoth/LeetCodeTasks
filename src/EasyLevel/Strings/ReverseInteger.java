@@ -7,15 +7,16 @@ public class ReverseInteger {
 
     }
     public static int reverse(int x) {
-        int res = 0;
-        boolean zero = false;
-        while(!zero){
-            res = res * 10 +(x % 10);
+        int y = 0;
+
+        while(x != 0) {
+            int yy = y*10 + (x % 10);
+
+            if ((yy - x%10)/10 != y) return 0;
+            else y = yy;
+
             x = x/10;
-            if (x == 0) {
-                zero = true;
-            }
         }
-        return res;
+        return y;
     }
 }
