@@ -12,5 +12,6 @@ public class SingleNumber {
             nums[0] ^= nums[i];
         }
         return nums[0];
+
     }
 }
